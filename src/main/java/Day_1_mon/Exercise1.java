@@ -48,15 +48,15 @@ public class Exercise1 {
         //Next step is to initialize the buffer reader and use its filereader to read the data file
         try {
             BufferedReader scan = new BufferedReader(new FileReader("src/data.txt"));
-            String s = "";
-            while ((s = scan.readLine()) != null) {
+            String s ;
+            while ((s = scan.readLine()) != null) {                         // != is required so the bufferreader reads every line that isnt null (File gets read top down basically any line that is blank gets ignored)
                 if (s.contains("id,first_name,last_name,email,gender")) {
                     continue;
                 }
 //                System.out.println(s);
 
 
-// the while loop is still inside the try statement so as the method reads from the file, string s takes what is read PER LINE into a string value readable by java
+// the while loop is still inside the try statement so as the method reads from the file, String s takes what is read PER LINE into a string value readable by java
                 // (note: scan.readline , this is why its per line)
 // if s contains the 'string' equal to the first line it has been told to ignore and continue since this line is not valuable data but more of instructions
 
@@ -92,8 +92,8 @@ public class Exercise1 {
                 // had to move it outside the loop , SEEN BELOW: this works allowing individual users details to be called
 
             }
-            System.out.println(users.get(2));
-            System.out.println(users.get(9));
+            System.out.println(users.get(4));
+            System.out.println(users.get(8));
 
 
         } catch (IOException e) {

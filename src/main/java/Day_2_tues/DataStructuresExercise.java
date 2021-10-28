@@ -32,6 +32,47 @@ public class DataStructuresExercise {
         System.out.println(LetterCount);
 
     }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // exercise 2 : bracket question, code answer below sourced from the internet ngl
+
+//    public class bracketexercise() {
+//
+//        public static char TOKENS[][] = {{'{', '}'}, {'(', ')'}, {'[', ']'}};
+//
+//        public boolean isValid(String expr) {
+//            Stack<Character> stack = new Stack<Character>();
+//            for (char ch : expr.toCharArray()) {
+//                if (isOpenTerm(ch)) {
+//                    stack.push(ch);
+//                } else {
+//                    if (stack.isEmpty() || !matches(stack.pop(), ch)) {
+//                        return false;
+//                    }
+//                }
+//            }
+//            return stack.isEmpty();
+//        }
+//
+//        public boolean isOpenTerm(char ch) {
+//            for (char[] chArr : TOKENS) {
+//                if (chArr[0] == ch) {
+//                    return true;
+//                }
+//            }
+//            return false;
+//        }
+//
+//        public boolean matches(char openTerm, char closeTerm) {
+//            for (char[] chArr : TOKENS) {
+//                if (chArr[0] == openTerm) {
+//                    return chArr[1] == closeTerm;
+//                }
+//            }
+//            return false;
+//        }
+//
+//    }
+
 
 
 

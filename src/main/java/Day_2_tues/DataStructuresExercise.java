@@ -1,5 +1,7 @@
 package Day_2_tues;
 
+import net.bytebuddy.utility.RandomString;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,13 +22,13 @@ public class DataStructuresExercise {
     }
 
  //////////////////////////////////////////////////////////////////////////////////////////
-    // Excersie 1 ) First method using a hashmap to count Character occurrence's
+    // Exercise 1 ) First method using a hashmap to count Character occurrence's
 
 
-    public static void StringCount(){
+    public static HashMap<Character, Integer> StringCount(String randomString){
 
-//        String randomString = "h,d,f,g,r,s,d,f,g,d,s,a,d,r,t,e,w,s,d,f,r,e";
-          String randomString = "q,z,f,o,y,u,u,t,e,w,d,k,c,v,n,j,o,k,h,d,,c,g,h,y,r,d,v,b,n,j,y,g,f,g,h,u,f,g,g,h,f,d,r,s,d,f,g,d,s,a,d,r,t,e,w,s,d,i,r,e,a,q,i,g,t";
+//        String randomString = "a,a,b";
+
 
 
         HashMap<Character, Integer> LetterCount = new HashMap<>();
@@ -40,6 +42,7 @@ public class DataStructuresExercise {
         }
 
         System.out.println(LetterCount);
+        return LetterCount;
 
     }
 

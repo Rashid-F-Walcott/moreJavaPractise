@@ -8,7 +8,7 @@ public class Main {
 
         DataStructuresExercise.PrintRandomString();
 
-        DataStructuresExercise.StringCount();
+//        DataStructuresExercise.StringCount();
 
         DataStructuresExercise.groupingAndCounting();
 
